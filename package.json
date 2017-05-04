@@ -1,0 +1,16 @@
+{
+  "name": "test-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "testcafe chrome test",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^0.15.0",
+    "yargs": "^8.0.1"
+  }
+}

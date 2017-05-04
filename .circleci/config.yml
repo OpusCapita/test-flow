@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7-browsers
+    working_directory: ~/test-flow
+
+    steps:
+      - checkout
+      - run: yarn
+      - run: yarn start -- --testing_url=${TESTING_URL}
