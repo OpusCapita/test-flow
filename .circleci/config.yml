@@ -12,8 +12,8 @@ jobs:
       - run: yarn start -- --testing_url=$TESTING_URL
 
       - deploy:
-        name: Build and push Docker image
-        command: |
-          docker build -t opuscapita/test-flow:latest .
-          docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
-          docker push opuscapita/test-flow:latest
+          name: Build and push Docker image
+          command: |
+            docker build -t opuscapita/test-flow:latest .
+            docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
+            docker push opuscapita/test-flow:latest
