@@ -12,7 +12,7 @@ fixture('Onboarding').page('http://google.com');
 async function validateTestingUrl() {
   await retry(async bail => {
     // if anything throws, we retry
-    const res = await fetch('http://localhost:8080/onboarding/');
+    const res = await fetch(`${TESTING_URL}/onboarding/`);
 
     if (!res.url.indexOf('/interaction/') || res.status === 502) {
       throw(new Error());
