@@ -3,8 +3,9 @@ import fetch from 'node-fetch';
 import { Selector } from 'testcafe';
 import { LoginPage } from './pages';
 
-const { argv } = require('yargs');
-const TESTING_URL = argv.testing_url || 'http://localhost:8080';
+const TESTING_URL = process.env.TESTING_URL || 'http://localhost:8080';
+
+console.log('test', TESTING_URL);
 
 // prevents breaking tests if TESTING_URL isn't available yet
 fixture('Onboarding').page('http://google.com');

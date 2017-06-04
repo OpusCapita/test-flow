@@ -33,6 +33,7 @@ build/Release
 # Dependency directories
 jspm_packages
 node_modules
+yarn.lock
 
 # Optional npm cache directory
 .npm

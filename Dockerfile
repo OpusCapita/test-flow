@@ -3,9 +3,8 @@ MAINTAINER patrykkopycinski
 
 WORKDIR /home/node/test-flow
 
-# Bundle app source by overwriting all WORKDIR content.
 COPY . /home/node/test-flow
 
-RUN yarn
+RUN sudo yarn
 
 CMD [ "npm", "start" ]
