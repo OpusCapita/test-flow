@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async-retry": "^0.3.0",
-    "node-fetch": "^1.6.3",
+    "async-retry": "^1.1.1",
+    "node-fetch": "^1.7.1",
     "testcafe": "^0.15.0",
     "yargs": "^8.0.1"
   }

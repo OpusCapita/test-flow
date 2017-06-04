@@ -3,13 +3,13 @@ jobs:
   build:
     docker:
       - image: circleci/node:7-browsers
-    working_directory: ~/test-flow
+    working_directory: /test-flow
 
     steps:
       - checkout
 
       - run: yarn
-      - run: yarn start -- --testing_url=$TESTING_URL
+      - run: export TESTING_URL=http://52.233.155.169 ; yarn start -- --testing_url=$TESTING_URL
 
       - setup_remote_docker
 
